@@ -1,0 +1,4 @@
+{
+    "driver_path": "libs/drivers/chromedriver",
+    "json_case_path": "docs/ddt/cases.json"
+}

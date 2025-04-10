@@ -1,0 +1,136 @@
+[
+    {
+        "module": "登录模块",
+        "preconditions": "无",
+        "cases": [
+            {
+                "front": [],
+                "steps": [
+                    {
+                        "desc": "进入登录页面",
+                        "open_type": "get",
+                        "values": {
+                            "url": "http://127.0.0.1/Home/user/login.html"
+                        }
+                    },
+                    {
+                        "desc": "输入用户名",
+                        "open_type": "input",
+                        "values": {
+                            "locale_basis": "id",
+                            "locale_value": "username",
+                            "input_value": "18455508512"
+                        }
+                    },
+                    {
+                        "desc": "输入密码",
+                        "open_type": "input",
+                        "values": {
+                            "locale_basis": "id",
+                            "locale_value": "password",
+                            "input_value": "780716"
+                        }
+                    },
+                    {
+                        "desc": "输入验证码",
+                        "open_type": "input",
+                        "values": {
+                            "locale_basis": "id",
+                            "locale_value": "verify_code",
+                            "input_value": "8888"
+                        }
+                    },
+                    {
+                        "desc": "点击登录",
+                        "open_type": "click",
+                        "values": {
+                            "locale_basis": "css selector",
+                            "locale_value": "a[name='sbtbutton']"
+                        }
+                    }
+                ],
+                "end": [
+                    {
+                        "desc": "退出登录",
+                        "open_type": "click",
+                        "values": {
+                            "locale_basis": "link text",
+                            "locale_value": "安全退出"
+                        }
+                    }
+                ],
+                "expected_result": [
+                    {
+                        "type": "element exist",
+                        "locale_basis": "css selector",
+                        "locale_value": "a[class='mu-m-phone']"
+                    }
+                ]
+            },
+            {
+                "front": [],
+                "steps": [
+                    {
+                        "desc": "进入登录页面",
+                        "open_type": "get",
+                        "values": {
+                            "url": "http://127.0.0.1/Home/user/login.html"
+                        }
+                    },
+                    {
+                        "desc": "输入用户名",
+                        "open_type": "input",
+                        "values": {
+                            "locale_basis": "id",
+                            "locale_value": "username",
+                            "input_value": "18455508514"
+                        }
+                    },
+                    {
+                        "desc": "输入密码",
+                        "open_type": "input",
+                        "values": {
+                            "locale_basis": "id",
+                            "locale_value": "password",
+                            "input_value": "qq780716"
+                        }
+                    },
+                    {
+                        "desc": "输入验证码",
+                        "open_type": "input",
+                        "values": {
+                            "locale_basis": "id",
+                            "locale_value": "verify_code",
+                            "input_value": "8888"
+                        }
+                    },
+                    {
+                        "desc": "点击登录",
+                        "open_type": "click",
+                        "values": {
+                            "locale_basis": "css selector",
+                            "locale_value": "a[name='sbtbutton']"
+                        }
+                    }
+                ],
+                "end": [
+                    {
+                        "desc": "退出登录",
+                        "open_type": "click",
+                        "values": {
+                            "locale_basis": "link text",
+                            "locale_value": "安全退出"
+                        }
+                    }
+                ],
+                "expected_result": [
+                    {
+                        "type": "element exist",
+                        "locale_basis": "css selector",
+                        "locale_value": "a[class='mu-m-phone']"
+                    }
+                ]
+            }
+        ]
+    }
+]
